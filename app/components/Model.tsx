@@ -64,7 +64,7 @@ function FlashingPointLight() {
 export default function Model() {
 
     return (
-        <div className="w-1/2 h-[430px]">
+        <div className="w-full h-[430px]">
         <Canvas>
             <spotLight position={[0, 5, 10]} intensity={100} distance={20} color={'mediumblue'} />
             <spotLight  position={[0, 5, -10]} intensity={100} distance={20} color={'mediumblue'} />
