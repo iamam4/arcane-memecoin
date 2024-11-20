@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #030512;
+  letter-spacing: 1.5px;
+}
+
+
+/* Bolt border */
+
+.ui_glowing_borders[data-glow] {
+position: absolute;
+inset: -1.5px;
+border: 1.5px solid transparent;
+border-radius: 9999px;
+-webkit-mask: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+mask: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+-webkit-mask-clip: padding-box, border-box;
+mask-clip: padding-box, border-box;
+-webkit-mask-composite: source-in, xor;
+mask-composite: intersect;
+pointer-events: none
+}
+
+.ui_glowing_borders[data-glow]:after,
+.ui_glowing_borders[data-glow]:before {
+content: "";
+height: 40px;
+aspect-ratio: 1/1;
+offset-anchor: 100% 50%;
+background: radial-gradient(circle at right, hsla(0, 0%, 100%, .75), transparent 50%), radial-gradient(circle at right, #62c3f0 50%, transparent);
+opacity: 1;
+offset-path: rect(0 100% 100% 0 round 30px);
+position: absolute;
+display: inline-block;
+animation: ui_loop 4s linear infinite
+}
+
+.ui_glowing_borders[data-glow]:before {
+display: none
+}
+
+@keyframes ui_loop {
+to {
+offset-distance: 100%
+}
 }
