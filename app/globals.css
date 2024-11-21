@@ -5,8 +5,9 @@
 body {
   background: #030512;
   letter-spacing: 1.5px;
+  overflow-x: hidden;
+  
 }
-
 
 /* Bolt border */
 
@@ -30,7 +31,7 @@ content: "";
 height: 40px;
 aspect-ratio: 1/1;
 offset-anchor: 100% 50%;
-background: radial-gradient(circle at right, hsla(0, 0%, 100%, .75), transparent 50%), radial-gradient(circle at right, #62c3f0 50%, transparent);
+background: radial-gradient(circle at right, hsla(0, 0%, 100%, .75), transparent 50%), radial-gradient(circle at right, #589bf3 50%, transparent);
 opacity: 1;
 offset-path: rect(0 100% 100% 0 round 30px);
 position: absolute;
