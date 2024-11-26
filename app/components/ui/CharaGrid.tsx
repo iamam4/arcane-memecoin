@@ -84,7 +84,7 @@ const gridData: CharaGridProps[] = [
 
 const CharaGrid = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-12 h-[800px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-12 h-[800px] my-5">
             {gridData.map((chara) => (
             <div key={chara.id} className="relative flex flex-col overflow-hidden rounded-sm cursor-pointer">
                 <div className="flex w-full h-full group">
@@ -93,7 +93,7 @@ const CharaGrid = () => {
                                     alt={chara.images[0].alt} 
                                     objectFit="cover" 
                                     fill 
-                                    className="rounded-sm transition-transform duration-300 scale-105 group-hover:scale-100"
+                                    className="rounded-sm transition-transform duration-300 group-hover:scale-105"
                                 />
                                 </div>
                 <div className="flex flex-col w-full h-auto bg-[#101217] z-0 rounded-b-sm border-t border-t-[#7C623A] justify-center items-center">
