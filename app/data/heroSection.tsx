@@ -1,3 +1,5 @@
+import { HeroSectionProps } from "../types/hero";
+
 export const heroSection: HeroSectionProps = {
     coin_name : "$Arcane",
     title: "Hextech Crystal",
