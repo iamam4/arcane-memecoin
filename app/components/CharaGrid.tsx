@@ -7,7 +7,7 @@ const CharaGrid = () => {
             <div className="flex w-full justify-center items-center">
                 <h1 className="text-center text-transparent text-4xl bg-clip-text bg-gradient-to-r from-[#c89c3c30] from-49% via-[#C89B3C] via-50% to-[#c89c3c30] px-8">HEXTECH CHAMPIONS</h1>
             </div>
-            <div className="grid grid-cols-2 h-[1200px] md:grid-cols-3 gap-4 p-12 md:h-[1000px] my-5">
+            <div className="grid sm:grid-cols-2  md:grid-cols-3 gap-4 p-12 h-[2000px] sm:h-[1200px] md:h-[1000px] my-5">
                 {characters.map((chara) => (
                     <div key={chara.id} className="relative flex flex-col overflow-hidden rounded-sm cursor-pointer ">
                         <div className=" relative flex w-full h-full group">

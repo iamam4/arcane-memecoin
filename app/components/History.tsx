@@ -2,7 +2,7 @@ export default function History(){
     return (
         <>
             <div className="flex w-full justify-center items-center">
-                <h1 className="text-center text-transparent text-4xl bg-clip-text bg-gradient-to-r from-[#c89c3c30] from-49% via-[#C89B3C] via-50% to-[#c89c3c30] ">History and Properties</h1>
+                <h1 className="text-center text-transparent text-4xl bg-clip-text bg-gradient-to-r from-[#c89c3c30] from-49% via-[#C89B3C] via-50% to-[#c89c3c30] px-8 ">History and Properties</h1>
             </div>
             <div className="flex flex-row flex-wrap justify-center items-center w-full py-12">
                 <div className="flex w-2/3  md:w-1/2">

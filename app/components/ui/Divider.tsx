@@ -8,7 +8,7 @@ export default function Divider() {
             alt="divider"
             width={9999}
             height={0.5}
-            className="m-20"
+            className="m-20 px-12"
         />
     </div>
     );
