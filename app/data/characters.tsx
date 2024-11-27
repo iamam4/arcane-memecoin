@@ -1,3 +1,4 @@
+import { CharacterProps } from "../types/character";
 
 export const characters: CharacterProps[] = [
     {
