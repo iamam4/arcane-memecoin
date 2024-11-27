@@ -9,8 +9,6 @@ import History from "./components/History";
 import Footer from "./components/Footer";
 
 
-
-
 export default function Home() {
   return (
     <>

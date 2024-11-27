@@ -3,7 +3,7 @@ interface ButtonImageProps {
     alt: string;
 }
 
-interface ButtonProps {
+export interface ButtonProps {
     id: number;
     showImage?: boolean;
     glow?: boolean;

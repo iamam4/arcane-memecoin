@@ -1,4 +1,5 @@
 import { heroSection } from "./heroSection"
+import { ButtonProps } from "../types"
 
 export const buttons: ButtonProps[] = [
     {   

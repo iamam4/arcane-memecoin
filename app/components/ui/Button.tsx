@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { ButtonProps } from "@/app/types";
 import { buttons } from "../../data/buttons";
 import "../../globals.css";
 
-export default function Button(props: ButtonProps) {
-    const { id, showImage = true, glow = true } = props;
+export default function Button({id = 0, showImage = true, glow = true}: ButtonProps) {
     const button = buttons[id];
     return (
         <div className="flex">

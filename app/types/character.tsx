@@ -2,7 +2,7 @@ interface CharacterImageProps {
     src: string;
     alt: string;
 }
-interface CharacterProps {
+export interface CharacterProps {
     id: number;
     name: string;
     description: string;
