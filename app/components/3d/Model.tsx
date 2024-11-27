@@ -1,7 +1,6 @@
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { MeshToonMaterial } from "three";
-import { useEffect } from "react";
+
 
 export default function Model() {
     const { scene } = useGLTF("/hextech_crystal.glb");
