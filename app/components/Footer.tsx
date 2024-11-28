@@ -11,9 +11,9 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-wrap justify-between items-center">
                     <div className="w-full md:w-auto mb-6 md:mb-0">
-                        <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#c99846] to-[#554023]">
+                        <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#c99846] to-[#554023]">
                             {heroSection.coin_name}
-                        </h3>
+                        </h1>
                         <p className="mt-2 text-gray-400">To the moon and beyond!</p>
                     </div>   
                     <div className="flex gap-6">
